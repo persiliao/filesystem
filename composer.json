@@ -1,0 +1,35 @@
+{
+    "name": "persiliao/filesystem",
+    "description": "flysystem integration for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PersiLiao",
+            "email": "xiangchu.liao@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "league/flysystem": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "league/flysystem-memory": "^1.0",
+        "overtrue/flysystem-qiniu": "^1.0",
+        "xxtime/flysystem-aliyun-oss": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PersiLiao\\Filesystem\\": "src/"
+        }
+    },
+    "suggest": {
+        "xxtime/flysystem-aliyun-oss": "required to use aliyun oss adapter",
+        "league/flysystem-memory": "required to use memory adapter",
+        "hyperf/guzzle": "required to use s3 adapter",
+        "league/flysystem-aws-s3-v3": "required to use s3 adapter",
+        "overtrue/flysystem-qiniu": "required to use qiniu adapter"
+    }
+}
